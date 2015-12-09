@@ -1,5 +1,4 @@
-EvenPay
-=======
+### EvenPay
 
 *Renjie Zhu, Dec 9, 2015*
 
@@ -10,3 +9,8 @@ should pay.
 
 This is inspires me to try to write a program for 
 easier process.
+
+### Version 1 (v1)
+
+I am going to try to finish during Christmas. So this 
+will be the version 1.  
