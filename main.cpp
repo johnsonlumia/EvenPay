@@ -11,45 +11,26 @@
 #include <iostream>
 #include <string>
 #include "Payer.h"
+#include "Event.h"
 using namespace std;
 
 // Global constants
 const int MAXPARTICIPANT = 10;
 
-/* class definitions
-class Payer {
-private:
-    string m_name;
-    int m_payment[MAXPAYMENTNUM];
-    
-public:
-    void giveName(string name);
-    string name();
-    
-    
-};
-
-void Payer::giveName(string name) {
-    m_name = name;
-}
-
-string Payer::name() {
-    return m_name;
-}
-*/
-
+// Main Function
 int main() {
     
     cout << "Welcome to EvenPay (v1)" << endl;
     string tempName;
     int count=0;
-    Payer parti[MAXPARTICIPANT];
-    char c = 'Y';
+    Payer part[MAXPARTICIPANT];
+    Event event;
+    char c;
     for (; count<MAXPARTICIPANT; count++) {
         
         cout << "What is the name? " << endl;
         getline(cin,tempName);
-        parti[count].giveName(tempName);
+        part[count].giveName(tempName);
         
         cout << "Create another participant? (Y for yes)" << endl;
         cin >> c;  cin.ignore(10000,'\n');
@@ -57,8 +38,9 @@ int main() {
     }
     
     for (int i=0; i<=count; i++) {
-        cout << parti[i].name() << endl;
+        cout << part[i].name() << endl;
     }
+    
     cout << "Thanks for using!" << endl;
     return 0;
 }

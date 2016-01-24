@@ -11,6 +11,8 @@
 
 #include <iostream>
 #include <string>
+#include "Event.h"
+
 using namespace std;
 
 // Global constants
@@ -18,9 +20,10 @@ const int MAXPAYMENTNUM = 10;
 
 // class definitions
 class Payer {
-private:
+
     string m_name;
     int m_payment[MAXPAYMENTNUM];
+    Event* m_event;
     
 public:
     void giveName(string name);
